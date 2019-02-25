@@ -3,3 +3,8 @@
 ################################################################################
 
 /.vs/config
+/.vs/RequestApprovalWorkflow/v15
+/src/RequestApprovalWorkflow.Host/bin
+/src/RequestApprovalWorkflow.Host/obj/Debug
+/src/RequestApprovalWorkflow.Host/Web.Debug.config
+/src/RequestApprovalWorkflow.Host/Web.Release.config

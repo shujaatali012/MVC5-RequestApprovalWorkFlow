@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{93CA764E-EC33-45AB-B067-6C30DF009AC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestApprovalWorkflow.Host", "src\RequestApprovalWorkflow.Host\RequestApprovalWorkflow.Host.csproj", "{4C369D77-4F89-4C5A-BBB8-510907FF8F4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C369D77-4F89-4C5A-BBB8-510907FF8F4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C369D77-4F89-4C5A-BBB8-510907FF8F4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C369D77-4F89-4C5A-BBB8-510907FF8F4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C369D77-4F89-4C5A-BBB8-510907FF8F4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4C369D77-4F89-4C5A-BBB8-510907FF8F4B} = {93CA764E-EC33-45AB-B067-6C30DF009AC7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85CF22A5-3304-411C-823C-C8EF6C30902D}
+	EndGlobalSection
+EndGlobal

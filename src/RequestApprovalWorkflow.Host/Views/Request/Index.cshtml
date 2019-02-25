@@ -1,0 +1,76 @@
+﻿@using Microsoft.AspNet.Identity
+
+@model List<RequestApprovalWorkflow.Host.Models.RequestViewModel>
+
+@{
+    ViewBag.Title = "Requests";
+}
+
+<h2>Requests</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.Label("Name")
+        </th>
+        <th>
+            @Html.Label("Description")
+        </th>
+        <th>
+            @Html.Label("Create Date")
+        </th>
+        <th>
+            @Html.Label("Status")
+        </th>
+        <th>
+            @Html.Label("Status Date")
+        </th>
+        <th>
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>
+            @Html.Label(item.Name, new { @class = "normal-lable" })
+        </td>
+        <td>
+            @Html.Label(item.Description, new { @class = "normal-lable" })
+        </td>
+        <td>
+            @Html.Label(item.CreateDate.ToShortDateString(), new { @class = "normal-lable" })
+        </td>
+        <td>
+            @if (item.RequstStatusId == 1)
+            {
+                @Html.Label("Pending", new { @class = "normal-lable" })
+            }
+            else if (item.RequstStatusId == 2)
+            {
+                @Html.Label("Approved", new { @class = "normal-lable success" })
+            }
+            else if (item.RequstStatusId == 3)
+            {
+                @Html.Label("Rejected", new { @class = "normal-lable danger" })
+            }
+            else
+            {
+                @Html.Label("N/A", new { @class = "normal-lable" })
+            }
+        </td>
+        <td>
+            @Html.Label(item.StatusDate.ToShortDateString(), new { @class = "normal-lable" })
+        </td>
+        <td>
+            @if (item.LoggedInUserDesignationId == 1 && item.RequstStatusId == 1)
+            {
+                @Html.ActionLink("Approve", "Approve", new { id = item.Id })
+                @Html.Label(" | ")
+                @Html.ActionLink("Reject", "Reject", new { id = item.Id })
+            }
+        </td>
+    </tr>
+    }
+</table>
