@@ -8,3 +8,4 @@
 /src/RequestApprovalWorkflow.Host/obj/Debug
 /src/RequestApprovalWorkflow.Host/Web.Debug.config
 /src/RequestApprovalWorkflow.Host/Web.Release.config
+/.vs
